@@ -9,7 +9,8 @@ Link clone Docker: https://github.com/saishunkan-system-vietnam/Drupal_docker.gi
 ### Chức năng cơ bản
 - Quản lý nội dung, bài viết
 - Quản lý menu
-- Quản lý danh mục
+- Quản lý danh mục, structure...
+- Quản lý comment
 - Quản lý đặt theme
 - Quản lý đặt module
 - Quản lý Blocks
