@@ -1,0 +1,76 @@
+1.Các khái niệm cơ bản :
+
+-Note : Mọi hiển thị trong drupal được coi là note,các mẫu hiển thị cơ bản.Note cơ bản gôm các thành phần :
+ +ảnh
+ +tiêu đề
+ +nội dụng
+ ...
+ 
+ -Phần mềm nội dung có 2 phần cơ bản :
+ +Bài viết:là các trang có dữ liệu thay đổi nhiều trong website như trang chủ,sản phẩm...
+ +Trang cơ bản:là các trang it có sự thay đổi như liên hệ,giới thiệu...
+ +Có thể tạo riêng các trang khác theo yêu cầu.
+ 
+ -Thems : giao diện của website
+ +Có 2 cách cài thems : dowload file .zip giải nén vào thư mục thems trong code.
+               cách 2 : https://www.drupal.org/docs/user_guide/en/extend-theme-install.html
+ +Có thể tùy biến về hiển thị thems như màu sắc,logo... khi thiết lập cài đặt thems.    
+ -Quản lý menu : dùng điều hường website.kết hợp vs taxonomy để làm menu cho website.
+ +Vào phần : Cấu trúc->menu để quản lý menu.
+ -View:Tạo ra hiển thị ở trong khối xác định của website.
+ +Thao tác cơ bản vs View : Cấu trúc->views->add views->....->save edit->cài đặt hiển thị cơ bản ở phần Displays phần bên trái,dữ liệu muốn hiển thị thế nào ở phần thứ 2,phần 3 views nâng cao(chưa biết)
+ ->save->hiển thị trong block.
+ 
+ -User:quản lý đăng nhập,các quền của user.
+ +Có 3 quyền cơ bản : người dùng,AUTHENTICATED USER,admin.
+ +admin full quyên.
+ +có thế cấp quền cho ng dùng :Mọi người->quyền->chọn quyền->lưu lại.
+ +có thể tạo thêm nhiều vai trò trong quản lý user : Mọi người->vai trò->tạo mới....
+ +có thêm thêm sửa xóa các quyền hoặc user...
+ 
+ -Comment : hiển thị bình luận của người dùng.
+ +Vào phần comment type để quản lý phần comment.Có thể tạo fomat nội dung comment ở comment type:thêm sửa trường theo yêu cầu.
+ +Khi thêm bài viết hoặc trang không muốn hiển thị có thể close.
+ 
+ -Block : Khối hiển thị trong website
+  Regions :khu vực hiên thị trong website.
+  +Vào cấu trúc->layout để xem và hiển thi các khổi thù hợp với website.
+  +muốn hiển thi trang nào tùy chon...
+  
+  -Taxonomy :phân loại nội dung của website.như categories trong website binh thường.thường làm chung với menu
+  +Vocabulary :danh mục cấp cao nhất.giống thẻ tag:bài viết thuộc 1 tag khi ấn vào tag đó sẽ ra tất cả bài viết thuôc tag đó.
+  =>phân loại và làm menu.
+  
+  -Content Type:tạo ra các trường có sẵn để người dùng nhập liệu cho từng trang theo yêu cầu website.
+  +Có thể tạo ra các trang khác nhau giống như trang cơ bản và bài viết.
+  +Có thể thêm sửa các trường theo ý.
+  
+  -Modules:là các gói plugig giúp hoàn thiện các tính năng cho website.
+  +Có 2 cách cài modules(giống thems).
+  +cài xong kích hoạt lên nếu muốn cấu hình gi thi cấu hình.
+  =>Mudules:pathauto để làm đường link thân thiện cho web: [node:content-type]/[node:nid] hoặc [node:content-type]/[node:title]
+  vi dụ :bai-viet/ssv-vietnam khác node/2
+  view slides:sửa hiệu ứng ảnh
+  =>cài vào rôi config
+  =>2 modules cần sdung nhiêu.
+  -Cấu hình trang chủ,tên website... ở config->basic setting.
+  -Cron chạy lại dữ liệu sau khoange thời gian nhất định
+  -Text fomat...:dùng để chỉnh cài đặt editor(cài thêm đươc nhưng sử dụng full html là đươc để load cả ảnh trong đó)
+  -Hiệu năng :Xóa bộ như đệm.lúc chỉnh css hay html trong code cần xóa bộ nhơ đệm đi đê nó chạy vì code cũ vân lưu ơ bộ nhớ đệm.
+  -ghi log báo lỗi,chế độ bảo trì,config....
+  -Search page:tim kiếm pages
+  -Url ảo :cài cái pathauto kia thì không cần để ý đến cái này nữa.
+  -Dịch vu web....
+  -Thiết lập tài khoản :Cài đặt tài khoản.
+  -Liên kết nhanh :Thêm các liên kết để đến nhanh trang đó.để khi ấn vào liên kết nhanh trên đầu màn hình di chuyển đến đó.
+  -Kiểu dáng ảnh :tùy chọn kích thước ảnh,cách hiển thị ảnh trong web
+  -Bộ công cụ là độ rõ nét của ảnh.
+  -Ngôn ngữ vùng địa phương......
+  
+  -Quản lý Front page: https://www.tutorialspoint.com/drupal/drupal_static_pages.htm
+  
+  Cách phát triển theme.
+  Cách phát triển module.
+  Các vấn đề bảo mật trong Drupal (middleware, filter...)
+  Cách tạo và xử lý API (Restful API? Rest API? Web service?...)
+  Drupal 8 APIs
